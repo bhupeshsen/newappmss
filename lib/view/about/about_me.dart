@@ -31,7 +31,7 @@ class AboutMe extends StatelessWidget {
         actions: [
 
           IconButton(onPressed: (){
-            ThemeService().switchTheme();
+
 
           }, icon: Icon(Icons.info,color: context.theme.primaryColor,))
         ],
