@@ -14,7 +14,7 @@ class TopHeadLineNewsItem extends StatelessWidget {
     return newsModel.urlToImage!=null?Container(
 
       width: MediaQuery.of(context).size.width,
-padding: EdgeInsets.all(0),
+padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
         //        border:  Border.all(color: Colors.orange),
           color:  context.theme.backgroundColor,

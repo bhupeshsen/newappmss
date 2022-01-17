@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:newappmss/constant/string_constants.dart';
 import 'package:newappmss/controller/headlines_news/top_headlines_news_controller.dart';
 import 'package:newappmss/custom-widget/news-item.dart';
 import 'package:newappmss/custom-widget/category-item.dart';
@@ -27,8 +28,8 @@ class TopHeadLinesNewsList extends GetView<TopHeadLinesNewsListController> {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Newsify",style: Theme.of(context).textTheme.headline1,),
-            Text("Bhupesh Sen",style: Theme.of(context).textTheme.headline6,)
+            Text(StringConstants.APP_NAME,style: Theme.of(context).textTheme.headline1,),
+            Text(StringConstants.DEVELOPER_NAME,style: Theme.of(context).textTheme.headline6,)
           ],
         ),
         leading: Icon(Icons.list_alt_rounded,color: context.theme.primaryColor,size: 45,),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:newappmss/constant/string_constants.dart';
 import 'package:newappmss/controller/headlines_news/news-details-controller.dart';
 import 'package:newappmss/theme/theme_service.dart';
 import 'package:newappmss/view/about/about_me.dart';
@@ -21,8 +22,8 @@ class NewsDetails extends GetView<NewsDetailsController> {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Newsify",style: Theme.of(context).textTheme.headline1,),
-            Text("Bhupesh Sen",style: Theme.of(context).textTheme.headline6,)
+            Text(StringConstants.APP_NAME,style: Theme.of(context).textTheme.headline1,),
+            Text(StringConstants.DEVELOPER_NAME,style: Theme.of(context).textTheme.headline6,)
           ],
         ),
         leading: IconButton(
